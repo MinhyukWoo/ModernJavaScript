@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduce MinhyukWoo</title>
+  </head>
+  <body>
+    <h2 id="header">MinhyukWoo</h2>
+    <p>I'm interested in ...</p>
+    <ul id="list">
+      <li class="language javascript">JavaScript</li>
+      <li class="language sql">Sql</li>
+      <li class="language python">Python</li>
+    </ul>
+    <script>
+      const $header = document.getElementById("header");
+      console.log($header);
+      const $items1 = document.getElementsByTagName("li");
+      console.log($items1);
+      const $list = document.getElementById("list");
+      const $items2 = $list.getElementsByTagName("li");
+      console.log($items2);
+      const $language = document.getElementsByClassName("language");
+      console.log($language);
+      const $javascript = document.getElementsByClassName("javascript");
+      console.log($javascript);
+      const $items = document.querySelectorAll(".language");
+      console.log($items);
+      for (const item of document.querySelectorAll("li")) {
+        if (item.matches(".sql")) {
+          console.log(item);
+        }
+      }
+    </script>
+  </body>
+</html>
